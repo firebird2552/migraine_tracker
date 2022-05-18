@@ -1,0 +1,18 @@
+@mixin custom-border {
+  border-top: solid black 4px;
+  border-left: solid black 2px;
+  border-right: solid black 2px;
+  border-bottom: solid black 4px;  
+  border-radius: 20px;
+}
+
+@mixin button {
+  padding: 1rem;
+  @include custom-border;
+  margin: .25rem;
+  border-radius: 20px;
+}
+
+@mixin button-hover {
+  background-color: grey;
+}
